@@ -1,7 +1,14 @@
 .nav-bar{
     display: flex;
-    margin: 32px auto;
+    margin: 32px 48px ;
     justify-content: space-between;
+    align-items: center;
     border: 0px solid var(--cream) ;
     border-radius: 32px;
+    background-color: var(--cream);
+
+}
+
+.nav-links {
+    text-decoration: none;
 }
