@@ -1,0 +1,7 @@
+.nav-bar{
+    display: flex;
+    margin: 32px auto;
+    justify-content: space-between;
+    border: 0px solid var(--cream) ;
+    border-radius: 32px;
+}
