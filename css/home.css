@@ -1,30 +1,23 @@
 
 
 .nav-bar {
-    display: flex;
-    margin: 32px 48px ;
-    justify-content: space-between;
-    align-items: center;
-    border: 0px solid var(--cream) ;
-    border-radius: 32px;
-    background-color: var(--cream);
-
-    border: 1px solid red;
-
-}
-
-.logo  {
     
 }
 
-
-.nav-links {
-    padding: 16px;
+.logo  {
+    position: absolute;
+    z-index: 2;
+    left: -2.5%;
+    left: 2.5%;
+    margin-top: -32px;
 }
+
+
+/*     
 
 .nav-links a {
     text-decoration: none; 
-}
+} */
 
 
 .banner {
