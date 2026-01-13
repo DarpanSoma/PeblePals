@@ -1,6 +1,6 @@
 
 
-.nav-bar{
+.nav-bar {
     display: flex;
     margin: 32px 48px ;
     justify-content: space-between;
@@ -8,6 +8,8 @@
     border: 0px solid var(--cream) ;
     border-radius: 32px;
     background-color: var(--cream);
+
+    border: 1px solid red;
 
 }
 
@@ -29,3 +31,4 @@
     max-width: 800px 800px;
     width: 100%; 
 }
+
