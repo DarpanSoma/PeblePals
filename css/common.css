@@ -56,10 +56,9 @@ body {
 }
 
 
-
+/* Header CSS */
 
 .main-header {
-    border: 2px solid red;
     
     margin: 32px;
     padding: 32px;
@@ -71,7 +70,13 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    position: relative;
 
+}
+
+.nav-link-group {
+    gap: 16px;
+    display: flex;
 }
 
 .nav-link {
@@ -81,11 +86,23 @@ body {
     font-weight: 800;
 }
 
-.nav-link.active {
-    border-bottom: 8px solid var(--text-black);
+.nav-link.active, .nav-link.hover {
+    border-bottom: 4px solid var(--text-black);
+}
+
+.nav-link.hover {
+    border-bottom: 4px solid var(--text-black);
+}
+
+.logo  {
+    position: absolute;
+    z-index: 2;
+    left: 1%; 
+    margin-top: -38px;
 }
 
 
+/* Main Content CSS */
 .main-content {
 
     border: 2px solid blue;
@@ -93,7 +110,23 @@ body {
 
 }
 
+/* Footer CSS */
 .main-footer {
 
-    border: 2px solid purple
+    border: 2px solid purple;
+    
+    background-image: url(/assets/footer_bg.png);
+    min-height: 300px;
+    background-size: cover;
+    background-position: bottom;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-copyright {
+    border: 2px solid grey;
 }
