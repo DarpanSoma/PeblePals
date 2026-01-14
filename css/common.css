@@ -127,6 +127,11 @@ body {
     gap: 16px;
 }
 
-.footer-copyright {
-    border: 2px solid grey;
+.dark-glass {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 16px;
+    border-radius: 4px;
+    width: 80%;
+    backdrop-filter: blur(32px);
+
 }
