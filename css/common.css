@@ -164,7 +164,7 @@ body {
 }
 
 .f-column.long > h3 {
-    text-align: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
