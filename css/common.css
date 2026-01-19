@@ -105,7 +105,6 @@ body {
 
 /* Footer CSS */
 .main-footer {
-  border: 2px solid purple;
 
   background-image: url(/assets/footer_bg.png);
   min-height: 300px;
@@ -136,8 +135,13 @@ body {
   /* flex: 1; */
   flex-direction: column;
   display: flex;
+  gap: 4px;
+  color: var(--text-white);
 
-  border: 4px solid green;
+  > p{
+    text-align: center;
+  }
+
 }
 
 .f-column > h3 {
@@ -165,6 +169,35 @@ body {
 
 .f-column.long > h3 {
   text-align: center;
+}
+
+.t-form {
+    display: flex;
+    gap: 16px;
+}
+
+.t-input {
+    border: 1px solid var(--yellow);
+    border-radius: 32px;
+    background: none;
+    padding: 8px;
+    color: var(--text-white);
+    flex: 1;
+}
+
+.t-button {
+color: var(--text-black);
+font-weight: 800;
+background-color: var(--yellow);
+padding: 8px 16px;
+border-radius: 32px;
+border: none;
+}
+
+
+.news {
+    color: var(--yellow);
+    font-weight: 800;
 }
 
 @media only screen and (max-width: 600px) {

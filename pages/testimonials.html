@@ -2,29 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pebble Pals</title>
-    <link rel="stylesheet" href="./../css/common.css">
-    <link rel="stylesheet" href="./css/home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pebble Pals</title>
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/home.css" />
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="main-header">
-      <nav class="nav-bar">
-        <div class="logo">
-          <img src="./../assets/Logo.png" />
-        </div>
-      </nav>
-      <!-- NDifferet pages -->
-      <div class="nav-links">
-        <a class="home-navlink active" href="/">Home</a>
-        <a class="about-navlink" href="/">About</a>
-        <a class="testimonials-navlink" href="./pages/testimonials.html">Testimonials</a >
-        <a class="adopt-navlink" href="./pages/adopt.html">Adopt</a>
+
+  <!-- Header -->
+  <header class="main-header">
+    <nav class="nav-logo">
+      <img class="logo" src="/assets/Logo.png" />
+    </nav>
+    <!-- Differet pages -->
+    <div class="nav-link-group">
+      <a class="nav-link " href="/index.html">Home</a>
+      <a class="nav-link" href="/index.html">About</a>
+      <a class="nav-link active" href="/pages/testimonials.html">Testimonials</a>
+      <a class="nav-link" href="/pages/adopt.html">Adopt</a>
+    </div>
+  </header>
+
+  <!-- Main Content of the webite -->
+  <main class="main-content">
+  </main>
+
+  <!-- footer -->
+  <footer class="main-footer">
+    <p class="footer-slogan">No rocks were quarried in the creation of this website</p>
+    <div class="dark-glass footer-main-content">
+      <div class="f-column">
+        <h3>Links</h3>
+        <a class="" href="/">Terms and conditions</a>
+        <a class="" href="/">Privacy Policy</a>
+        <a class="" href="/">Contact</a>
       </div>
-    </header>
+      <div class="f-column">
+        <h3>Socials</h3>
+        <a href="/">Facebook</a>
+        <a href="/">x.com</a>
+        <a href="/">Youtube</a>
+      </div>
+      <div class="f-column long">
+        <h3>Stay in Touch</h3>
+        <p>Want to be notified about new rocks rolling 
+          into our shelter?<br/>
+          Sign up for the <span class="news">newsletter!</span>
+          </p>
+          <form class="t-form">
+        <input required class="t-input" type="email" placeholder="Your email...">
+        <button class="t-button" type="submit">Subscribe</button>
+          </form>
+      </div>
+    </div>
+    <div class="dark-glass footer-copyright">© 2026 Peble Pals - All rights reserved</div>
+  </footer>
+
+
 </body>
 
 </html>
