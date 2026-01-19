@@ -1,25 +1,26 @@
+.hero-banner {
 
-/* 
-.nav-bar {
-    
-} */
+    background-image: url(/assets/Banner_image.png);
+    min-height: 485px;
+    background-repeat: no-repeat;
 
-/* .logo  {
-    position: absolute;
-    z-index: 2;
-    left: -2.5%;
-    left: 2.5%;
-    margin-top: -32px;
-} */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 
+    padding-right: 64px;
+  }
 
-/*     
+  .hero-heading{
+    font-size: 30px;
+    color: var(--text-white);
+    text-shadow: var(--text-shadow)
+  }
 
-.nav-links a {
-    text-decoration: none; 
-} */
-
-/* 
-.banner {
-} */
-
+  .hero-link{
+   justify-content: center;
+   text-decoration: none;
+   color: var(--text-white);
+   padding: ;
+  }
