@@ -46,10 +46,13 @@
   
   .t-home {
     display: flex;
+    align-items: center;
     gap: 8px;
 
     border: 1px solid var(--red);
     border-radius: 4px;
+    background-color: var(--text-black);
+    color: var(--text-white);
 
   }
   
