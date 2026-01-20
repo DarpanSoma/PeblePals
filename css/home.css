@@ -32,3 +32,40 @@
    border-radius: 32px;
    font-weight: 800;
   }
+
+  .t-home-section {
+    background-color: var(--yellow);
+    border-bottom: 1px solid black;
+    
+    display: flex;
+    gap: 32px;
+
+    flex-wrap: wrap;
+  }
+
+  
+  .t-home {
+    display: flex;
+    gap: 8px;
+
+    border: 1px solid var(--red);
+    border-radius: 4px;
+
+  }
+  
+  .t-rating {
+border-color: var(--yellow);
+padding: 8px;
+color: var(--red);
+font-weight: 800;
+border-radius: 0px 32px 32px 0px;
+  }
+
+  .t-message {
+
+  }
+
+  .t author {
+font-size: 12px;
+padding-right: 8px;
+  }
