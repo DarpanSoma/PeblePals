@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 button {
   cursor: pointer;
 }
@@ -91,7 +92,7 @@ body {
 
 .logo {
   position: absolute;
-  z-index: 2;
+  z-index: 99;
   left: 1%;
   margin-top: -38px;
 }
@@ -202,4 +203,46 @@ border: none;
   .footer-main-content {
     flex-direction: column;
   }
+}
+
+
+.clouds-section{
+  background: #67a1bc;
+  background: linear-gradient(
+    180deg,
+    rgba(103, 161, 188, 1) 0%,
+    rgba(144, 183, 191, 1) 100%
+  );
+  position: relative;
+  min-height: 550px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.cloud{
+  position: absolute;
+  z-index: 1;
+}
+.cloud.small{
+  left: 30%;
+  top: 32px;
+}
+.cloud.left{
+  left: 0;
+}
+.cloud.right{
+  right: 0;
 }

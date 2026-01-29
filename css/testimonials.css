@@ -1,0 +1,33 @@
+.test-heading {
+    color: var(--text-white);
+    font-size:  42px;
+    text-shadow: var(--text-shadow);
+}
+
+#all-testimonials {
+    border: 1px solid red;
+    width: 100%;
+
+}
+
+
+
+#test-form {
+    background: #67a1bc;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 255) 0%,
+      rgba(144, 183, 191, 1) 100%
+    );
+
+    box-shadow: var(--card-blue-shadow);
+
+    border-radius: 32px;
+}
+
+
+
+ 
+.line {
+    border: 1px solid black;
+}
