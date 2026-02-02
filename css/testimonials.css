@@ -1,33 +1,45 @@
-.test-heading {
+.test-heading{
     color: var(--text-white);
-    font-size:  42px;
+    font-size: 42px;
     text-shadow: var(--text-shadow);
 }
-
-#all-testimonials {
+ 
+#all-testimonials{
     border: 1px solid red;
     width: 100%;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 900px;
 }
-
-
-
-#test-form {
-    background: #67a1bc;
-    background: linear-gradient(
-      180deg,
-      rgb(255, 255, 255) 0%,
-      rgba(144, 183, 191, 1) 100%
-    );
-
-    box-shadow: var(--card-blue-shadow);
-
+#test-form{
+    padding: 32px;
     border-radius: 32px;
+    box-shadow: var(--card-blue-shadow);
+    background: linear-gradient(
+        180deg,
+        rgb(255, 255, 255) 0%,
+        rgba(144, 183, 191, 1) 100%);
 }
-
-
-
  
-.line {
-    border: 1px solid black;
+ 
+.t-cloud{
+    background: linear-gradient(
+        180deg,
+        rgb(255, 255, 255) 0%,
+        rgba(144, 183, 191, 1) 100%);
+ 
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 32px;
+        border-radius: 64px;
+        width: 100%;
+        max-width: 300px;
+}
+.t-top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--text-black);
+    align-items: center;
 }
