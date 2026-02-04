@@ -246,3 +246,18 @@ border: none;
 .cloud.right{
   right: 0;
 }
+
+
+.main-btn {
+  background-color: var(--blue-dark);
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-shadow: var(--card-shadow);
+
+}
+
+.main-btn:hover{
+  filter: brightness(1.1);
+}

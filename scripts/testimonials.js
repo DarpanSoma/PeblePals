@@ -36,7 +36,6 @@ let testimonialList = [
 // Container for Testimonial
 let all_t = document.getElementById("all-testimonials");
 
-
 // Decide what testimonial to use
 // one from storage and default from this file
 
@@ -53,23 +52,32 @@ function getTestimonials() {
 testimonialList = getTestimonials();
 console.log(testimonialList);
 
+function getStars(rating) {
+  let stars = "";
+
+  for (let i = 0; i < 5; i++) {
+    if (i < rating) {
+      stars += `<img src="/assets/star_yellow.svg" />`;
+    } else {
+      stars += `<img src="/assets/star_black.svg" />`;
+    }
+  }
+  return stars;
+}
+
 // testimonials data to screen
-for(let current_t of testimonialList){
-    
-    let new_t = `
-              <div class="t-cloud">
+for (let current_t of testimonialList) {
+  let stars = getStars(current_t.rating);
+  let new_t = `
+          <div class="t-cloud">
             <div class="t-top">
               <div class="t-stars">
-                <img src="/assets/star_yellow.svg" />
-                <img src="/assets/star_yellow.svg" />
-                <img src="/assets/star_yellow.svg" />
-                <img src="/assets/star_yellow.svg" />
-                <img src="/assets/star_yellow.svg" />
+              ${stars}
               </div>
-              <p class="t-author">~some goob</p>
+              <p class="t-author">~${current_t.name}</p>
             </div>
-            <p class="t-review">some random text</p>
+            <p class="t-review">${current_t.review}</p>
           </div>
-    `
-    all_t.innerHTML += new_t;
+    `;
+  all_t.innerHTML += new_t;
 }
