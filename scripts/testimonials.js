@@ -66,18 +66,48 @@ function getStars(rating) {
 }
 
 // testimonials data to screen
-for (let current_t of testimonialList) {
-  let stars = getStars(current_t.rating);
-  let new_t = `
-          <div class="t-cloud">
-            <div class="t-top">
-              <div class="t-stars">
-              ${stars}
+function drawTestimonials() {
+
+all_t.innerHTML = "";
+
+
+  for (let current_t of testimonialList) {
+    let stars = getStars(current_t.rating);
+    let new_t = `
+            <div class="t-cloud">
+              <div class="t-top">
+                <div class="t-stars">
+                ${stars}
+                </div>
+                <p class="t-author">~${current_t.name}</p>
               </div>
-              <p class="t-author">~${current_t.name}</p>
+              <p class="t-review">${current_t.review}</p>
             </div>
-            <p class="t-review">${current_t.review}</p>
-          </div>
-    `;
-  all_t.innerHTML += new_t;
+      `;
+    all_t.innerHTML += new_t;
+  } 
 }
+drawTestimonials();
+
+let form = document.getElementById("test-form")
+let newReview = document.getElementById("review")
+let author = document.getElementById("author")
+
+
+function addNewTestimonial(event){
+  event.preventDefault();
+  let rating = document.querySelector("input:checked")
+
+  let newTestimonial = {
+      "rating": rating.value,
+      "name": author.value,
+      "review": newReview.value,
+    }
+    testimonialList.push(newTestimonial)
+
+    drawTestimonials();
+    localStorage.setItem("testimonials", JSON.stringify(testimonialList))
+
+}
+
+form.addEventListener("submit", addNewTestimonial)
