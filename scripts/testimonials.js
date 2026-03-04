@@ -96,7 +96,7 @@ let author = document.getElementById("author")
 
 function addNewTestimonial(event){
   event.preventDefault();
-  let rating = document.querySelector("input:checked")
+  let rating = document.querySelector(`input:checked`)
 
   let newTestimonial = {
       "rating": rating.value,

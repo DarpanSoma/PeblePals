@@ -53,6 +53,10 @@ body {
   background-color: var(--blue-dark);
 }
 
+
+
+
+
 /* Header CSS */
 
 .main-header {
@@ -261,3 +265,25 @@ border: none;
 .main-btn:hover{
   filter: brightness(1.1);
 }
+
+
+@media only screen and (max-width: 800px) {
+
+  .main-header{
+    flex-direction: column;
+    height: unset;
+  }
+  
+  .logo{
+  z-index: 20;
+  position: relative;
+  margin-top: 0;
+  }
+
+
+  .main-footer  {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
